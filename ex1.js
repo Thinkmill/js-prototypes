@@ -11,7 +11,7 @@ function Foo (bar) {
 
 const foo = new Foo();
 
-expect(foo.prototype === foo.__proto__).toEqual(/* enter here */);
+expect(Foo.prototype === Foo.__proto__).toEqual(/* enter here */);
 
 expect(typeof foo.prototype).toEqual(/* enter here */);
 

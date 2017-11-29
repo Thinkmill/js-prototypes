@@ -27,6 +27,6 @@ expect(obj.__proto__).toBe(Object.prototype);
  * foo.__proto__ === Foo.prototype
  */
 
-expect(obj.prototype).toEqual(/* enter here */);
+expect(typeof obj.prototype).toEqual(/* enter here */);
 
 });

@@ -11,18 +11,15 @@
 // to check if a property exists on the prototype chain
 
 function hasOwnProperty (obj, property) {
-	// could also do it recursively
-	let hasOwn = false;
-	while (obj != null) {
-		/* implement here */
-	}
+	// warning: this is actually really trick
 }
 
-const obj1 = { test: 'test' };
-const obj2 = {};
-
 test('ex5', () => {
+	const obj1 = { test: 'test' };
+	const obj2 = {};
+
 	// if these tests pass, hasOwnProperty is complete
 	expect(hasOwnProperty(obj1, 'test')).toEqual(true);
 	expect(hasOwnProperty(obj2, 'toString')).toEqual(false);
+	expect(hasOwnProperty(obj2, 'notThere')).toEqual(false);
 });
