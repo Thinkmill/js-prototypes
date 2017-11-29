@@ -1,0 +1,17 @@
+{
+	"scripts": {
+		"all": "jest",
+		"ex1": "jest ex1.js",
+		"ex2": "jest ex2.js",
+		"ex3": "jest ex3.js",
+		"ex4": "jest ex4.js",
+		"ex5": "jest ex5.js",
+		"ex6": "jest ex6.js"
+	},
+  "dependencies": {
+    "jest": "^21.2.1"
+  },
+	"jest": {
+		"testRegex": ".\\.js$"
+	}
+}
